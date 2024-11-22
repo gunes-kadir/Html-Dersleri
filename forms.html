@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+</head>
+
+<body>
+
+    <form action="/home/register">
+
+        <p>
+            Ad: <input type="text" name="ad" placeholder="Adınızı giriniz" required>
+        </p>
+
+        <p>
+            Soyad: <input type="text" name="soyad" placeholder="Soyadınızı giriniz" required>
+        </p>
+
+        <p>
+            Eposta: <input type="email" name="email" placeholder="Email'inizi giriniz">
+        </p>
+
+        <p>
+            Parola: <input type="password" name="parola" placeholder="Parolanızı giriniz" required>
+        </p>
+
+        <p>
+            Doğum Yılını Giriniz <br> <input type="date" name="date" required>
+        </p>
+
+        <p>
+            Tatil istediğiniz ay <br> <input type="month" name="month" required>
+        </p>
+
+        <p>
+            Kaç yıldır eğitim görüyorsunuz <br> <input type="number" name="quantity" min="1" max="5">
+        </p>
+
+        <p>
+            Saat kaçta uyanırsınız <br> <input type="time" name="usr_time">
+        </p>
+
+        <p>
+            Beni hatırla: <input type="checkbox" name="hatırla">
+        </p>
+
+        <p>
+            Erkek : <input type="radio" name="cinsiyet">
+            Kadın : <input type="radio" name="cinsiyet">
+        </p>
+
+        <p>
+            Hobiler: <br>
+            Sinema <input type="checkbox" name="hobi">
+            Spor <input type="checkbox" name="hobi">
+            Kitap okumak <input type="checkbox" name="hobi">
+        </p>
+
+        <p>
+            Şehir : <br>
+            <select name="sehir">
+                <option>Istanbul</option>
+                <option>Kocaeli</option>
+                <option>Izmir</option>
+            </select>
+        </p>
+        
+        <p>
+            Çalışmayı tercih ettiğiniz şehirler : <br>
+            <select multiple name="sehirler">
+                <option>Istanbul</option>
+                <option>Kocaeli</option>
+                <option>Izmir</option>
+            </select>
+        </p>
+
+
+<input type="submit" value="Kaydet">
+
+    </form>
+
+
+
+</body>
+
+</html>
